@@ -1,4 +1,19 @@
-.table{
-    background-color:blueviolet;
+body{
+    background-image: url(img/poio.jpg)
 }
 
+.table{
+    background-color:rgb(239, 151, 44);
+}
+
+.cabeza1{
+    background-color:rgb(255, 56, 33);
+}
+
+.cabeza2{
+    background-color:rgb(255, 56, 33);
+}
+
+.teibol{
+    background-color:rgb(239, 151, 44);
+}
