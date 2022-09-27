@@ -3,6 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        
         <title>Menú de un restaurante</title>
     </head>
     <body>
@@ -14,8 +15,7 @@
           <tr class="cabeza1">
               <td><strong>SuperCombo</strong></td>
               <td><strong>Combo Personal</strong></td>
-              <td><strong>Combo infantil</strong></td>
-              <td><strong>Precio</strong></td>
+              <td><strong>Combo Infantil</strong></td>
               <td><strong>Cantidad</strong></td>
           </tr>
             
@@ -24,7 +24,6 @@
             <td scope="col">3 piezas de pollo</td>
             <td scope="col">2 piezas de pollo</td>
             <td scope="col">1 pieza de pollo</td>
-            <td scope="col">$7.25</td>
             <td><input type="number" id="super" min="1" max="50"></td>
           </tr>
           
@@ -32,16 +31,20 @@
             <td scope="col">Ensalada y papas fritas</td>
             <td scope="col">Papas fritas</td>
             <td scope="col">Papas fritas</td>
-            <td scope="col">$5.75</td>
             <td><input type="number" id="personal"  min="1" max="50"></td>
           </tr>
           
           <tr>
-            <td scope="col">Bebida grande a eleción</td>
+            <td scope="col">Bebida grande</td>
             <td scope="col">Bebida mediana</td>
             <td scope="col">Bebida pequeña</td>
-            <td scope="col">$3.50</td>
             <td><input type="number" id="infantil"  min="1" max="50"></td>
+          </tr>
+
+          <tr>
+            <td scope="col">$7.25</td>
+            <td scope="col">$5.75</td>
+            <td scope="col">$3.50</td>
           </tr>
       </table>
 <br><br><br>
@@ -104,19 +107,26 @@
             </tr>
           </table>
           <br>
-          <input type="button" name="anadir" id="anadir" value="Añadir">
+          <input type="submit" value="Añadir a la compra">
+          
        </article>
 
        <article class="derch">
          <h1>Cuenta Final </h1>
          <div class="fondo">
-
-          <div class="cant"></div>
-
+           <br><br>
+            <p>Cantidad: </p>
+          <div id="cant"></div>
+          <br><br>
+          <p>Observación de Pedido: </p>
+          <textarea name="observ" id="observ" cols="30" rows="10"></textarea>
+            <br><br><br><br><br>
+         
+            <hr color="red" width="85%">
           <p>Total: </p>
            <div id="total"></div>
          </div>
        </article>
-
+       <script src="js/menu.js"></script>
     </body>
 </html>
