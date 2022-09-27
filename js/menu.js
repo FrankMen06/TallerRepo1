@@ -30,7 +30,7 @@ function formatDecimal(val, n) {
 
 
     /*items*/
-    function cant(){
+    function añadir(){
         var supComb = getElementById('super').value;
         var personal = getElementById('personal').value;
         var infantil = getElementById('infantil').value;
@@ -46,12 +46,8 @@ function formatDecimal(val, n) {
         var cafe = getElementById('cafe').value;
         var postre = getElementById('postre').value;
 
-        var imprimir = supComb;
-        
-        var cant =  document.getElementById('cant');
-        cant.innerHTML = imprimir;
+        var totalSup = preSup * supComb;
+
+        document.getElementById('total').innerHTML=totalSup
     }
 
-    function total(){
-        
-    }
