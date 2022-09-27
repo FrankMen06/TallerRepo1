@@ -17,6 +17,10 @@ h1{
     margin-left: 10%;
 }
 
+td{
+    font-size:20px;
+}
+
 .table{
     background-color:rgb(239, 151, 44);
     
