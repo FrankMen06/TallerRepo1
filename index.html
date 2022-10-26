@@ -9,25 +9,29 @@
 </head>
 <body>
 
-    <h1>Nombres al aza  </h1>
-
-    <form >
+    <h1>Nombres al hazar  </h1>
+            
+    <form id="fomulario" class="formulario">
 
         <div class="container">
-
             <fieldset>
 
-                <legend>
-                    Ingrese los Nombres:
-                </legend>
+                <legend>Nombres al Azar</legend>
+                <br>
+    
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="nombres" name="nombre"  placeholder="Nombre" required="required">
+                <br>
 
+                <input type="button" onclick="guardarDatos()" value="Enviar" class="btn41-43 btn-41">
+                <br><br>
+
+                <p id="aleatorios">Sus nombres aleatorios son: </p>
+    
             </fieldset>
-            
-
         </div>
-
-    </form>
-
+       
+    </form>    
 
     <script src="js/script.js"></script>
 </body>
