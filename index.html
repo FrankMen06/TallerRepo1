@@ -1,129 +1,34 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        
-        <title>Menú de un restaurante</title>
-    </head>
-    <body>
-    
-        <h1>Menu de Combos y productos varios</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Taller 1</title>
+</head>
+<body>
 
-       <article class="izq">
-        <table class="table">
-          <tr class="cabeza1">
-              <td><strong>SuperCombo</strong></td>
-              <td><strong>Combo Personal</strong></td>
-              <td><strong>Combo Infantil</strong></td>
-              <td><strong>Cantidad</strong></td>
-          </tr>
+    <h1>Nombres al aza  </h1>
+
+    <form >
+
+        <div class="container">
+
+            <fieldset>
+
+                <legend>
+                    Ingrese los Nombres:
+                </legend>
+
+            </fieldset>
             
-          
-          <tr>
-            <td scope="col">3 piezas de pollo</td>
-            <td scope="col">2 piezas de pollo</td>
-            <td scope="col">1 pieza de pollo</td>
-            <td><input type="number" id="super" min="1" max="50"></td>
-          </tr>
-          
-          <tr>
-            <td scope="col">Ensalada y papas fritas</td>
-            <td scope="col">Papas fritas</td>
-            <td scope="col">Papas fritas</td>
-            <td><input type="number" id="personal"  min="1" max="50"></td>
-          </tr>
-          
-          <tr>
-            <td scope="col">Bebida grande</td>
-            <td scope="col">Bebida mediana</td>
-            <td scope="col">Bebida pequeña</td>
-            <td><input type="number" id="infantil"  min="1" max="50"></td>
-          </tr>
 
-          <tr>
-            <td scope="col">$7.25</td>
-            <td scope="col">$5.75</td>
-            <td scope="col">$3.50</td>
-          </tr>
-      </table>
-<br><br><br>
-         <table class="teibol">
-          <tr class="cabeza2">
-              <td><strong>Productos varios</strong></td>
-              <td><strong>Precio</strong></td>
-              <td><strong>Cantidad</strong></td>
-              <tr>
+        </div>
 
-            <tr>
-              <td scope="col">Ensalada</td>
-              <td scope="col">$1.50</td>
-              <td><input type="number" id="ensa"  min="1" max="50"></td>
-            </tr>
-            <tr>
-              <td scope="col">Papa frita</td>
-              <td scope="col">$1.25</td>
-              <td><input type="number" id="papa"  min="1" max="50"></td>
-            </tr>
-            <tr>
-              <td scope="col">Pieza de Pollo grande</td>
-              <td scope="col">$1.75</td>
-              <td><input type="number" id="pzGrande"  min="1" max="50"></td>
-            </tr>
-            <tr>
-              <td scope="col">Pieza de Pollo mediana</td>
-              <td scope="col">$1.50</td>
-              <td><input type="number" id="pzMed"  min="1" max="50"></td>
-            </tr>
-            <tr>
-              <td scope="col">Pieza de Pollo pequeña</td>
-              <td scope="col">$1.25</td>
-              <td><input type="number" id="pzPeq"  min="1" max="50"></td>
-            </tr>
-            <tr>
-              <td scope="col">Bebida grande</td>
-              <td scope="col">$1.50</td>
-              <td><input type="number" id="bebGran"  min="1" max="50"></td>
-            </tr>
-            <tr>
-              <td scope="col">Bebida mediana</td>
-              <td scope="col">$1.25</td>
-              <td><input type="number" id="bebMed"  min="1" max="50"></td>
-            </tr>
-            <tr>
-              <td scope="col">Bebida pequeña</td>
-              <td scope="col">$1.00</td>
-              <td><input type="number" id="bebPeq"  min="1" max="50"></td>
-            </tr>
-            <tr>
-              <td scope="col">Café</td>
-              <td scope="col">$0.50</td>
-              <td><input type="number" id="cafe"  min="1" max="50"></td>
-            </tr>
-            <tr>
-              <td scope="col">Postre</td>
-              <td scope="col">$1.25</td>
-              <td><input type="number" id="postre"  min="1" max="50"></td>
-            </tr>
-          </table>
-          <br>
-          <input type="submit" value="Añadir a la compra" onclick="añadir()">
-          
-       </article>
+    </form>
 
-       <article class="derch">
-         <h1>Cuenta Final </h1>
-         <div class="fondo">
-           <br><br>
-          <p>Observación de Pedido: </p>
-          <textarea name="observ" id="observ" cols="30" rows="10"></textarea>
-            <br><br><br><br><br>
-         
-            <hr color="red" width="85%">
-          <p>Total: </p>
-           <div id="total"></div>
-         </div>
-       </article>
-       <script src="js/menu.js"></script>
-    </body>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
